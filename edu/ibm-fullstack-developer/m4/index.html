@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ivan Miropolskii · Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="nav-bar">
+      <div class="brand">
+        <span class="brand-initials">IM</span>
+        <span class="brand-name">Ivan Miropolskii</span>
+      </div>
+      <nav aria-label="Primary" class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
+      </nav>
+      <a class="home-link" href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M12 2 2 10h2v10h6v-5h4v5h6V10h2z" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="panel">
+      <img class="profile-image" src="https://via.placeholder.com/320x360.png?text=Ivan+Miropolskii" alt="Portrait of Ivan Miropolskii" />
+      <div class="intro">
+        <span class="tagline">Austin, Texas · Full Stack Developer</span>
+        <h1>Ivan Miropolskii</h1>
+        <p>
+          I build dependable web platforms with a balance of front-end polish and solid back-end services. My background in management helps me keep projects steady, communicate clearly, and deliver on schedule.
+        </p>
+        <p>
+          Recent work spans Vue and React interfaces paired with Python FastAPI services, data automation, and AI-assisted workflows. Calm delivery, well-documented handoffs, and measured experimentation are my defaults.
+        </p>
+        <ul class="contact-list">
+          <li><span>Location:</span> Austin, Texas</li>
+          <li><span>Phone:</span> <a href="tel:1">+1 (512) ###-####</a></li>
+          <li><span>Email:</span> <a href="mailto:miropolskiy.ivan@gmail.com">miropolskiy.ivan@gmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="panel">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-icon">UI</span>
+          <div>
+            <h3>Frontend Delivery</h3>
+            <p>JavaScript, TypeScript, Vue (Vuex, Pinia), React, PrimeVue, Vuetify. Component libraries that stay consistent and accessible.</p>
+          </div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">PY</span>
+          <div>
+            <h3>Python Services</h3>
+            <p>FastAPI APIs, Pandas data flows, AI toolkits (LangChain, OpenAI, MCP function calling) for process automation and assistants.</p>
+          </div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">DATA</span>
+          <div>
+            <h3>Data & Storage</h3>
+            <p>PostgreSQL, MySQL, MSSQL, MariaDB, Redis. Query tuning, schema refactors, and dependable data migration routines.</p>
+          </div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">OPS</span>
+          <div>
+            <h3>DevOps Routine</h3>
+            <p>Dockerized environments, GitHub Actions, Jenkins, Cypress, PHPUnit. Quiet deployments with clear runbooks.</p>
+          </div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">TEAM</span>
+          <div>
+            <h3>Collaboration</h3>
+            <p>Planning workshops, stakeholder updates, mentoring. Turning shifting requirements into actionable backlog items.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Mars Digging Ops Console</h3>
+          <p>Unified dashboard for a mining operations crew with marketing tools, telemetry views, and sales support.</p>
+          <ul>
+            <li>Delivered Vue3 and React clients backed by FastAPI services for configuration and reporting.</li>
+            <li>Introduced Cypress coverage and calm release schedules so on-call alerts stayed quiet.</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <h3>Atlas Signal Research Hub</h3>
+          <p>Data platform that aggregates patent intelligence and makes it searchable for analysts.</p>
+          <ul>
+            <li>Wrote Python pipelines (Pandas, BeautifulSoup, Selenium) with scheduled refreshes and audit logs.</li>
+            <li>Smoothed the web experience with incremental Vue updates and straightforward navigation.</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <h3>Skyline Estates Portal</h3>
+          <p>Real-estate portal with CRM tooling, nightly data sync, and reporting for brokers.</p>
+          <ul>
+            <li>Coordinated a full-stack build using Vue UI layers over Python and SQL APIs.</li>
+            <li>Documented CI/CD playbooks so the team could ship confidently without supervision.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="recommendations" class="panel">
+      <h2>Recommendations</h2>
+      <div id="recommendation-list" class="recommendations-grid" aria-live="polite">
+        <article class="recommendation-card">
+          <p>“Ivan kept our mining control room on track. Releases were predictable, and the interface stayed easy for the crew.”</p>
+          <h4>Luna Vega · Product Lead, Mars Digging Corp</h4>
+        </article>
+        <article class="recommendation-card">
+          <p>“Analysts finally trust the numbers. The Python workflows Ivan set up are transparent, and the UI changes landed smoothly.”</p>
+          <h4>Priya Khatri · Lead Analyst, Atlas Signal Observatory</h4>
+        </article>
+        <article class="recommendation-card">
+          <p>“Brokers can self-serve now. Ivan’s cadence, documentation, and mentoring reduced escalations across the board.”</p>
+          <h4>Jonah Reeves · Director, Skyline Estates</h4>
+        </article>
+      </div>
+      <form id="recommendation-form" class="recommendation-form" aria-label="Submit a new recommendation">
+        <label for="rec-name">Your Name</label>
+        <input id="rec-name" name="fullName" type="text" placeholder="How should we credit you?" />
+        <label for="rec-message">Recommendation</label>
+        <textarea id="rec-message" name="message" placeholder="Share your experience working with Ivan..." required></textarea>
+        <button type="submit">Submit Recommendation</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Ivan Miropolskii. Steady delivery, thoughtful communication.
+  </footer>
+
+  <div id="confirmation-popup" class="popup-backdrop" role="alertdialog" aria-modal="true" aria-hidden="true">
+    <div class="popup-dialog">
+      <h3>Thank you!</h3>
+      <p>Your recommendation has been added.</p>
+      <button type="button" id="popupClose">Close</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
