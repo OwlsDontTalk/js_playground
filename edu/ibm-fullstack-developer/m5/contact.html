@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | TravelBloom</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">TravelBloom</div>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link active" href="contact.html">Contact Us</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </header>
+
+    <div id="nav-menu" class="mobile-menu" hidden>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About Us</a>
+      <a class="nav-link active" href="contact.html">Contact Us</a>
+    </div>
+
+    <main class="page">
+      <section class="page-hero contact-hero">
+        <div class="overlay"></div>
+        <div class="page-hero__content">
+          <h1>Let&apos;s plan your next escape</h1>
+          <p>
+            Share your travel dreams and our concierge team will craft a
+            personalized itinerary within 24 hours.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-section contact-section" aria-labelledby="contact-heading">
+        <div class="contact-grid">
+          <div class="contact-details">
+            <div class="section-header">
+              <h2 id="contact-heading">We would love to hear from you</h2>
+              <p>Reach us by email, phone, or the form and we will respond promptly.</p>
+            </div>
+            <ul class="contact-info">
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:hello@travelbloom.com">hello@travelbloom.com</a>
+              </li>
+              <li><strong>Phone:</strong> +1 (555) 732-4100</li>
+              <li><strong>Hours:</strong> Monday to Saturday, 9am – 7pm EST</li>
+              <li><strong>HQ:</strong> 420 Lone Star Blvd, Suite 8, Austin, TX</li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="Alex Traveler" />
+
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567" />
+
+            <label for="message">How can we help?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Tell us about your dream destination..."
+            ></textarea>
+
+            <button type="submit" class="btn primary">Send message</button>
+            <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> TravelBloom. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

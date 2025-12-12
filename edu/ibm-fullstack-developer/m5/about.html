@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | TravelBloom</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">TravelBloom</div>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="about.html">About Us</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </header>
+
+    <div id="nav-menu" class="mobile-menu" hidden>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="about.html">About Us</a>
+      <a class="nav-link" href="contact.html">Contact Us</a>
+    </div>
+
+    <main class="page">
+      <section class="page-hero about-hero">
+        <div class="overlay"></div>
+        <div class="page-hero__content">
+          <h1>We design journeys that transform</h1>
+          <p>
+            TravelBloom is a collective of explorers, travel writers, and local
+            hosts curating immersive itineraries for curious travelers.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="mission-heading">
+        <div class="section-header">
+          <h2 id="mission-heading">Our mission</h2>
+          <p>
+            Create meaningful connections between people and places through
+            thoughtful, sustainable travel experiences.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Curated expertise</h3>
+            <p>
+              Our travel architects vet each destination, collaborating with
+              on-the-ground insiders to surface authentic experiences.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Sustainable focus</h3>
+            <p>
+              We champion responsible tourism by supporting local communities
+              and protecting natural and cultural heritage.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Traveler-first</h3>
+            <p>
+              Every itinerary is personalized based on your curiosities, pace,
+              and comfort level to make each moment count.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="team-heading">
+        <div class="section-header">
+          <h2 id="team-heading">Meet the TravelBloom guides</h2>
+          <p>
+            A global team of specialists ensures every journey is seamless from
+            planning to post-trip reflections.
+          </p>
+        </div>
+        <div class="card-grid team-grid">
+          <article class="card team-card">
+            <img
+              src="https://via.placeholder.com/400x400?text=Travel+Guide"
+              alt="Placeholder for Maya, lead cultural guide"
+            />
+            <div class="card-body">
+              <h3>Maya Patel</h3>
+              <p>Cultural Curator • Kyoto &amp; Jaipur</p>
+            </div>
+          </article>
+          <article class="card team-card">
+            <img
+              src="https://via.placeholder.com/400x400?text=Travel+Guide"
+              alt="Placeholder for Luca, culinary specialist"
+            />
+            <div class="card-body">
+              <h3>Luca Moretti</h3>
+              <p>Culinary Specialist • Tuscany &amp; Amalfi Coast</p>
+            </div>
+          </article>
+          <article class="card team-card">
+            <img
+              src="https://via.placeholder.com/400x400?text=Travel+Guide"
+              alt="Placeholder for Amara, wellness expert"
+            />
+            <div class="card-body">
+              <h3>Amara Chen</h3>
+              <p>Wellness Expert • Bali &amp; Ubud</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="values-heading">
+        <div class="section-header">
+          <h2 id="values-heading">How we plan unforgettable trips</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <h3>Discover</h3>
+            <p>
+              We begin with a collaborative vision session to learn what excites
+              and inspires you.
+            </p>
+          </li>
+          <li>
+            <h3>Design</h3>
+            <p>
+              Our specialists craft on-brand itineraries with optional add-ons
+              and immersive experiences.
+            </p>
+          </li>
+          <li>
+            <h3>Delight</h3>
+            <p>
+              Dedicated concierge support keeps your travels seamless, from
+              airport arrivals to farewell dinners.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> TravelBloom. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

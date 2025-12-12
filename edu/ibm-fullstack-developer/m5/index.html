@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBloom | Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">TravelBloom</div>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </header>
+
+    <div id="nav-menu" class="mobile-menu" hidden>
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About Us</a>
+      <a class="nav-link" href="contact.html">Contact Us</a>
+    </div>
+
+    <main>
+      <section class="hero" role="banner">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Curate unforgettable journeys</p>
+          <h1>Explore. Discover. Embrace the world.</h1>
+          <p>
+            TravelBloom matches your travel style with handpicked destinations.
+            Immerse yourself in rich cultures, pristine beaches, and hidden gems
+            crafted for your next getaway.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="contact.html">Book Now</a>
+            <div class="social-links" aria-label="Social media">
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a>
+              <a href="https://www.pinterest.com" target="_blank" rel="noreferrer">Pinterest</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-section" aria-labelledby="search-heading">
+        <div class="section-header">
+          <h2 id="search-heading">Find your dream destination</h2>
+          <p>
+            Search by country, travel style, or experience. We will surface the
+            highlights you cannot miss.
+          </p>
+        </div>
+        <form id="search-form" class="search-form" role="search">
+          <label class="sr-only" for="search-input">Search destination</label>
+          <input
+            id="search-input"
+            type="search"
+            name="query"
+            placeholder="Try &quot;Japan&quot;, &quot;Beach&quot;, or &quot;Wellness&quot;"
+            autocomplete="off"
+          />
+          <button type="submit" class="btn secondary">Search</button>
+        </form>
+        <div id="search-results" class="search-results" aria-live="polite"></div>
+      </section>
+
+      <section class="recommendations" aria-labelledby="beach-heading">
+        <div class="section-header">
+          <h2 id="beach-heading">Sun-drenched beach escapes</h2>
+          <p>
+            Unwind on turquoise shores framed by palms and breezy beach clubs.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+              alt="Aerial view of a Maldives overwater villa"
+            />
+            <div class="card-body">
+              <h3>Maldives Serenity</h3>
+              <p>
+                Wake up over shimmering lagoons, snorkel with sea turtles, and
+                dine under the stars.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=900&q=80"
+              alt="Beachside lounge chairs facing a turquoise ocean in Tulum"
+            />
+            <div class="card-body">
+              <h3>Tulum Seaside Chic</h3>
+              <p>
+                Boho-chic stays, cenote dips, and sunrise yoga sessions along
+                Mexico&#39;s Caribbean coast.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="recommendations" aria-labelledby="temple-heading">
+        <div class="section-header">
+          <h2 id="temple-heading">Sacred temple journeys</h2>
+          <p>
+            Step into centuries of history with guided journeys through revered
+            temples and heritage landmarks.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1541417904950-b855846fe074?auto=format&fit=crop&w=900&q=80"
+              alt="Golden pagodas of Shwedagon Pagoda in Yangon"
+            />
+            <div class="card-body">
+              <h3>Yangon Mystique</h3>
+              <p>
+                Marvel at the golden glow of Shwedagon Pagoda and join
+                meditative twilight ceremonies.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
+              alt="Sunrise over Angkor Wat temple complex"
+            />
+            <div class="card-body">
+              <h3>Angkor Sunrise</h3>
+              <p>
+                Capture dawn at Angkor Wat and explore vine-draped temples
+                hidden in Cambodia&#39;s jungle.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="recommendations" aria-labelledby="country-heading">
+        <div class="section-header">
+          <h2 id="country-heading">Country spotlights</h2>
+          <p>
+            Tailored itineraries blend culture, cuisine, and adventure for a
+            deeper connection to each destination.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=900&q=80"
+              alt="Lantern-lined street in Kyoto at dusk"
+            />
+            <div class="card-body">
+              <h3>Japan Harmony</h3>
+              <p>
+                Tea ceremonies in Kyoto, bullet train escapes, and neon nights in
+                Tokyo&#39;s creative hubs.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=900&q=80"
+              alt="Cinque Terre village perched on a seaside cliff"
+            />
+            <div class="card-body">
+              <h3>Italy Indulgence</h3>
+              <p>
+                Coastal hikes through Cinque Terre, rustic Tuscan tastings, and
+                art walkabouts in Florence.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> TravelBloom. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
