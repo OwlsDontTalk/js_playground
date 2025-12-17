@@ -21,22 +21,21 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
+    defaults:
+      run:
+        working-directory: edu/ibm-fullstack-developer/m6/paradise-nursery
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install
-        working-directory: edu/ibm-fullstack-developer/m6
-        run: npm install
-
-      - name: Build
-        working-directory: edu/ibm-fullstack-developer/m6
-        run: npm run build
+      - run: npm install
+      - run: npm run build
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: edu/ibm-fullstack-developer/m6/build
+          path: edu/ibm-fullstack-developer/m6/paradise-nursery/build
 
       - id: deployment
         uses: actions/deploy-pages@v4
