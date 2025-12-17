@@ -35,7 +35,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: edu/ibm-fullstack-developer/m6/paradise-nursery/build
+          path: edu/ibm-fullstack-developer/m6/paradise-nursery/dist
 
       - id: deployment
         uses: actions/deploy-pages@v4
