@@ -1,0 +1,1 @@
+to redeploy the app - put the `static.yaml` into .github/workflows/.. 
