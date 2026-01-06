@@ -1,0 +1,12 @@
+{
+  "name": "m7-m3-express-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Simple Express.js backend example",
+  "scripts": {
+    "start": "node express-server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
